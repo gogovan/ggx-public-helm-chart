@@ -3,7 +3,7 @@ entries:
   redis-ha:
   - apiVersion: v2
     appVersion: 7.0.4
-    created: 2022-12-09T09:25:25.637555Z
+    created: 2022-12-09T10:22:05.685723Z
     description: This Helm chart provides a highly available Redis implementation
       with a master/slave configuration and uses Sentinel sidecars for failover management
     digest: bbf2f4b1cbbce94b11f1736fb2ddba0a4d882360af106d08211c72705d94b563
@@ -26,4 +26,29 @@ entries:
     urls:
     - https://gogovan.github.io/ggx-public-helm-chart/redis-ha-4.22.4.tgz
     version: 4.22.4
-generated: 2022-12-09T09:25:25.635Z
+  - apiVersion: v2
+    appVersion: 6.2.5
+    created: 2022-12-09T10:22:05.682133Z
+    description: This Helm chart provides a highly available Redis implementation
+      with a master/slave configuration and uses Sentinel sidecars for failover management
+    digest: ac2f207767bb49bcb09f4bcdbf10bc8971a11d7a7580e5ec7d6aa8c548a828cf
+    home: http://redis.io/
+    icon: https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: salimsalaues@gmail.com
+      name: ssalaues
+    - email: aaron.layfield@gmail.com
+      name: dandydeveloper
+    name: redis-ha
+    sources:
+    - https://redis.io/download
+    - https://github.com/DandyDeveloper/charts/blob/master/charts/redis-ha
+    - https://github.com/oliver006/redis_exporter
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/redis-ha-4.16.0.tgz
+    version: 4.16.0
+generated: 2022-12-09T10:22:05.661415Z
