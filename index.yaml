@@ -1,9 +1,34 @@
 apiVersion: v1
 entries:
+  loki:
+  - apiVersion: v2
+    appVersion: 2.6.1
+    created: "2022-12-19T13:05:10.358046+08:00"
+    dependencies:
+    - alias: grafana-agent-operator
+      condition: monitoring.selfMonitoring.grafanaAgent.installOperator
+      name: grafana-agent-operator
+      repository: https://grafana.github.io/helm-charts
+      version: 0.2.3
+    description: Helm chart for Grafana Loki in simple, scalable mode
+    digest: 7ce28ba27203b3d7f52bd5e6c69d978285bcd269315a9f8754384442f762e1b6
+    home: https://grafana.github.io/helm-charts
+    icon: https://grafana.com/docs/loki/latest/logo_and_name.png
+    maintainers:
+    - name: trevorwhitney
+    name: loki
+    sources:
+    - https://github.com/grafana/loki
+    - https://grafana.com/oss/loki/
+    - https://grafana.com/docs/loki/latest/
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/loki-3.2.1.tgz
+    version: 3.2.1
   redis-ha:
   - apiVersion: v2
     appVersion: 7.0.4
-    created: 2022-12-09T10:22:05.685723Z
+    created: "2022-12-19T13:05:10.363133+08:00"
     description: This Helm chart provides a highly available Redis implementation
       with a master/slave configuration and uses Sentinel sidecars for failover management
     digest: bbf2f4b1cbbce94b11f1736fb2ddba0a4d882360af106d08211c72705d94b563
@@ -28,7 +53,7 @@ entries:
     version: 4.22.4
   - apiVersion: v2
     appVersion: 6.2.5
-    created: 2022-12-09T10:22:05.682133Z
+    created: "2022-12-19T13:05:10.361498+08:00"
     description: This Helm chart provides a highly available Redis implementation
       with a master/slave configuration and uses Sentinel sidecars for failover management
     digest: ac2f207767bb49bcb09f4bcdbf10bc8971a11d7a7580e5ec7d6aa8c548a828cf
@@ -51,4 +76,4 @@ entries:
     urls:
     - https://gogovan.github.io/ggx-public-helm-chart/redis-ha-4.16.0.tgz
     version: 4.16.0
-generated: 2022-12-09T10:22:05.661415Z
+generated: "2022-12-19T13:05:10.350791+08:00"
