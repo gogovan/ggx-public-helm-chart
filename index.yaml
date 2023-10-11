@@ -3,7 +3,7 @@ entries:
   loki:
   - apiVersion: v2
     appVersion: 2.6.1
-    created: "2023-10-11T14:03:06.847674+08:00"
+    created: "2023-10-11T14:11:41.194367+08:00"
     dependencies:
     - alias: grafana-agent-operator
       condition: monitoring.selfMonitoring.grafanaAgent.installOperator
@@ -28,9 +28,9 @@ entries:
   query-exporter:
   - apiVersion: v1
     appVersion: 2.7.0
-    created: "2023-10-11T14:03:06.848532+08:00"
+    created: "2023-10-11T14:11:41.194886+08:00"
     description: A Helm chart for Kubernetes to run query-exporter
-    digest: 05d237c67c8eb3b826ec5a5e00a681c0c6da22b677129253d4d8a5de5da2eeac
+    digest: 1798edbb91199f110b9d0c235c4d6cb8b3621f518f2137b9d5925be0cac64561
     home: https://github.com/albertodonato/query-exporter
     icon: https://helm.sh/img/helm-logo.svg
     keywords:
@@ -43,7 +43,7 @@ entries:
   redis-ha:
   - apiVersion: v2
     appVersion: 7.0.4
-    created: "2023-10-11T14:03:06.853913+08:00"
+    created: "2023-10-11T14:11:41.199728+08:00"
     description: This Helm chart provides a highly available Redis implementation
       with a master/slave configuration and uses Sentinel sidecars for failover management
     digest: bbf2f4b1cbbce94b11f1736fb2ddba0a4d882360af106d08211c72705d94b563
@@ -68,7 +68,7 @@ entries:
     version: 4.22.4
   - apiVersion: v2
     appVersion: 6.2.5
-    created: "2023-10-11T14:03:06.852183+08:00"
+    created: "2023-10-11T14:11:41.197078+08:00"
     description: This Helm chart provides a highly available Redis implementation
       with a master/slave configuration and uses Sentinel sidecars for failover management
     digest: ac2f207767bb49bcb09f4bcdbf10bc8971a11d7a7580e5ec7d6aa8c548a828cf
@@ -91,4 +91,4 @@ entries:
     urls:
     - https://gogovan.github.io/ggx-public-helm-chart/redis-ha-4.16.0.tgz
     version: 4.16.0
-generated: "2023-10-11T14:03:06.840516+08:00"
+generated: "2023-10-11T14:11:41.185824+08:00"
