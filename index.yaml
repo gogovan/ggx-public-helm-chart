@@ -1,5 +1,24 @@
 apiVersion: v1
 entries:
+  kong:
+  - apiVersion: v2
+    appVersion: "3.1"
+    created: "2024-05-22T15:51:38.542213+08:00"
+    description: The Cloud-Native Ingress and API-management
+    digest: 3d01b624aeae6ab7c5f91ac9ff0fc2296f790bcf9878b673f0dcb2afb5b871d4
+    home: https://konghq.com/
+    icon: https://s3.amazonaws.com/downloads.kong/universe/assets/icon-kong-inc-large.png
+    maintainers:
+    - email: harry@konghq.com
+      name: hbagdi
+    - email: traines@konghq.com
+      name: rainest
+    name: kong
+    sources:
+    - https://github.com/Kong/charts/tree/main/charts/kong
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/kong-2.14.0.tgz
+    version: 2.14.0
   loki:
   - apiVersion: v2
     appVersion: 2.6.1
