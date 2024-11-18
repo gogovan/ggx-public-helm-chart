@@ -3,9 +3,9 @@ entries:
   debezium:
   - apiVersion: v2
     appVersion: v0-0-2
-    created: "2024-11-18T11:03:26.602386+08:00"
+    created: "2024-11-18T11:18:47.107955+08:00"
     description: Debezium connection
-    digest: 75af1645cefe6c98c5397c69bbd6ee58212d23f1c0b02be8a51e164e9f5394b6
+    digest: 2fbf7bacef35923aaabdec8b8990b5b3bf6bd2df95bf8a3c5d1a1a4753241d43
     icon: https://debezium.io/assets/images/color_white_debezium_type_600px.svg
     name: debezium
     type: application
