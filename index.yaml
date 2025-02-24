@@ -14,15 +14,15 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: v0-0-2
-    created: "2024-11-18T12:13:10.126486+08:00"
+    created: "2025-02-24T17:11:52.599745+08:00"
     description: Debezium connection
-    digest: 15ca0e04fc5ad9deef477aef1d2ea6c9d82df0730a33c5d6e49e120d4dfe4f60
+    digest: f745d037fb884b7cbb9ee568fcb353ffcd64af06ae710dd9b19adcde42dba8ab
     icon: https://debezium.io/assets/images/color_white_debezium_type_600px.svg
     name: debezium
     type: application
     urls:
-    - https://gogovan.github.io/ggx-public-helm-chart/debezium-0.0.3.tgz
-    version: 0.0.3
+    - https://gogovan.github.io/ggx-public-helm-chart/debezium-0.0.5.tgz
+    version: 0.0.5
   kong:
   - apiVersion: v2
     appVersion: "3.1"
