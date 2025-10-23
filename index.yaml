@@ -3,6 +3,17 @@ entries:
   debezium:
   - apiVersion: v2
     appVersion: v0-0-2
+    created: "2025-10-23T13:26:28.013482+08:00"
+    description: Debezium server
+    digest: e2749006d558f66a5c0841683e57537ece5bc980bfceff4f33818c0116478c22
+    icon: https://debezium.io/assets/images/color_white_debezium_type_600px.svg
+    name: debezium
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/debezium-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: v0-0-2
     created: "2025-10-23T12:55:53.697255+08:00"
     description: Debezium server
     digest: bc6d4a64d587c16dff2d4f6bc0bb8ef5729f96042dfe87aac6cac1ae11398288
