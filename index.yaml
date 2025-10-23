@@ -3,6 +3,17 @@ entries:
   debezium:
   - apiVersion: v2
     appVersion: v0-0-2
+    created: "2025-10-23T12:36:42.269945+08:00"
+    description: Debezium server
+    digest: 1cbdd6cd557fc29d7d3e9800720297f6ddf81906f209c07130dda8a108d02ab9
+    icon: https://debezium.io/assets/images/color_white_debezium_type_600px.svg
+    name: debezium
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/debezium-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: v0-0-2
     created: "2025-02-24T17:23:06.001891+08:00"
     description: Debezium connection
     digest: 13626882e02167710700d453114b5d8394608b13fb65d2697f90d728757c3782
@@ -34,6 +45,17 @@ entries:
     urls:
     - https://gogovan.github.io/ggx-public-helm-chart/debezium-0.0.5.tgz
     version: 0.0.5
+  debezium-connectors:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-10-23T12:36:42.270259+08:00"
+    description: A Helm chart for Debezium connectors
+    digest: b33b1d73897c3c09075894720a43f1c5ff8789ad3840766854470a57781a35bd
+    name: debezium-connectors
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/debezium-connectors-0.1.0.tgz
+    version: 0.1.0
   kong:
   - apiVersion: v2
     appVersion: "3.1"
