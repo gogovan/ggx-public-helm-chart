@@ -375,4 +375,144 @@ entries:
     urls:
     - https://gogovan.github.io/ggx-public-helm-chart/redis-ha-4.16.0.tgz
     version: 4.16.0
+  grafana:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/grafana/helm-charts
+        - name: Upstream Project
+          url: https://github.com/grafana/grafana
+    apiVersion: v2
+    appVersion: 12.3.1
+    created: "2026-07-07T11:35:24.971122+08:00"
+    deprecated: true
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: c08c87969270402e7d5227edb8385af67cc32ee34817bff89773ad02303b5d79
+    home: https://grafana.com
+    icon: https://artifacthub.io/image/b4fed1a7-6c8f-4945-b99d-096efa3e4116
+    keywords:
+    - monitoring
+    - metric
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: github@jkroepke.de
+      name: jkroepke
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    - https://github.com/grafana/helm-charts
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/grafana-10.5.15.tgz
+    version: 10.5.15
+  - apiVersion: v2
+    appVersion: 9.4.7
+    created: "2026-07-07T11:35:24.972621+08:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: f5d0f6052e582ca39c45ac9769497b31e97c0410abf541da0362d2d55746c5a7
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/grafana-6.54.0.tgz
+    version: 6.54.0
+  k6-operator:
+  - apiVersion: v1
+    appVersion: 0.0.11
+    created: "2026-07-07T11:35:24.974343+08:00"
+    description: A Helm chart to install the k6-operator
+    digest: a1aeb2d32086eaef0aba0f06a7c436a7d2511f0bad1e66b8792357e47bd160fa
+    home: https://k6.io
+    icon: https://raw.githubusercontent.com/grafana/k6-docs/main/static/images/icon.png
+    keywords:
+    - load-testing
+    - smoke-testing
+    - stress-testing
+    - soak-testing
+    - kubernetes
+    - distributed-testing
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: olha@k6.io
+      name: yorugac
+    name: k6-operator
+    sources:
+    - https://github.com/grafana/k6-operator
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/k6-operator-3.2.0.tgz
+    version: 3.2.0
+  promtail:
+  - apiVersion: v2
+    appVersion: 2.6.0
+    created: "2026-07-07T11:35:24.975238+08:00"
+    description: Promtail is an agent which ships the contents of local logs to a
+      Loki instance
+    digest: c7ef7e3bc7c006ba1a41441ff418bf860c8f3fc9060a8fd5e83e61d83a73f98a
+    home: https://grafana.com/loki
+    icon: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png
+    maintainers:
+    - email: lokiproject@googlegroups.com
+      name: Loki Maintainers
+    - name: unguiculus
+    name: promtail
+    sources:
+    - https://github.com/grafana/loki
+    - https://grafana.com/oss/loki/
+    - https://grafana.com/docs/loki/latest/
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/promtail-6.2.0.tgz
+    version: 6.2.0
+  tempo:
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: "2026-07-07T11:35:24.975684+08:00"
+    description: Grafana Tempo Single Binary Mode
+    digest: cd36ff2d46190a30dfe3764af8c6d3eaea24e02f17ba48dd071aaae12bf88cc7
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/tempo/master/docs/tempo/website/logo_and_name.png
+    maintainers:
+    - email: number101010@gmail.com
+      name: joe-elliott
+    - email: 9215868@gmail.com
+      name: swartz-k
+    - name: annanay25
+    - name: mdisibio
+    - name: dgzlopes
+    - name: mapno
+    name: tempo
+    sources:
+    - https://github.com/grafana/tempo
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/tempo-1.1.0.tgz
+    version: 1.1.0
 generated: "2026-05-11T15:08:28.529427+08:00"
