@@ -1,5 +1,188 @@
 apiVersion: v1
 entries:
+  crossplane:
+  - apiVersion: v1
+    appVersion: 1.10.1
+    created: "2026-07-10T11:58:59.834368+08:00"
+    description: Crossplane is an open source Kubernetes add-on that enables platform
+      teams to assemble infrastructure from multiple vendors, and expose higher level
+      self-service APIs for application teams to consume.
+    digest: 0b93a206fd298f9c6c015eaf0cbf66f4235be5e9084abe4aa3d66f57f2c0e40d
+    home: https://crossplane.io
+    icon: https://crossplane.io/images/favicon_192x192.png
+    keywords:
+    - cloud
+    - infrastructure
+    - services
+    - application
+    - database
+    - cache
+    - bucket
+    - infra
+    - app
+    - ops
+    - gcp
+    - azure
+    - aws
+    - alibaba
+    - cloudsql
+    - rds
+    - s3
+    - azuredatabase
+    - asparadb
+    - gke
+    - aks
+    - eks
+    maintainers:
+    - email: info@crossplane.io
+      name: Crossplane Maintainers
+    name: crossplane
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/crossplane-1.10.1.tgz
+    version: 1.10.1
+  descheduler:
+  - apiVersion: v1
+    appVersion: 0.33.0
+    created: "2026-07-10T11:58:59.836492+08:00"
+    description: Descheduler for Kubernetes is used to rebalance clusters by evicting
+      pods that can potentially be scheduled on better nodes. In the current implementation,
+      descheduler does not schedule replacement of evicted pods but relies on the
+      default scheduler for that.
+    digest: 1f32da32dedc6c066f197637e1fbd10546e9c6987322b88e71add1c9765c978f
+    home: https://github.com/kubernetes-sigs/descheduler
+    icon: https://kubernetes.io/images/favicon.png
+    keywords:
+    - kubernetes
+    - descheduler
+    - kube-scheduler
+    maintainers:
+    - email: sig-scheduling@kubernetes.io
+      name: Kubernetes SIG Scheduling
+    name: descheduler
+    sources:
+    - https://github.com/kubernetes-sigs/descheduler
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/descheduler-0.33.0.tgz
+    version: 0.33.0
+  external-secrets:
+  - apiVersion: v2
+    appVersion: v0.6.1
+    created: "2026-07-10T11:58:59.838107+08:00"
+    description: External secret management for Kubernetes
+    digest: 524d8e5cc095ed0efa6faa4229ada2b3ff426e574734d48ebd2c47eeda85d570
+    home: https://github.com/external-secrets/external-secrets
+    icon: https://raw.githubusercontent.com/external-secrets/external-secrets/main/assets/eso-logo-large.png
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: kellinmcavoy@gmail.com
+      name: mcavoyk
+    name: external-secrets
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/external-secrets-0.6.1.tgz
+    version: 0.6.1
+  kafka-ui:
+  - apiVersion: v2
+    appVersion: v0.7.2
+    created: "2026-07-10T11:58:59.838367+08:00"
+    description: A Helm chart for kafka-UI
+    digest: 0c8e429d1e708ba9565ca508976d4472889e137fbc8f25442896fe73aff8f782
+    icon: https://github.com/provectus/kafka-ui/raw/master/documentation/images/kafka-ui-logo.png
+    name: kafka-ui
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/kafka-ui-0.7.6.tgz
+    version: 0.7.6
+  ksqldb:
+  - apiVersion: v2
+    appVersion: 0.29.0
+    created: "2026-07-10T11:58:59.843073+08:00"
+    dependencies:
+    - condition: kafka.create
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami/
+      version: 19.0.x
+    description: Confluent ksqlDB Helm Chart
+    digest: 415cf7cfb7633b1f1374684934a2e7c5d898ceff4cb5d161e9973a0acafa4a86
+    icon: https://github.com/licenseware/helm-charts/raw/main/static/png/ksqldb.jpg
+    keywords:
+    - ksqldb
+    - confluent
+    - ksql
+    - kafka
+    - streaming
+    name: ksqldb
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/ksqldb-0.4.1.tgz
+    version: 0.4.1
+  kyverno:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Syntax change for webhooksCleanup switch to match with the rest of the file
+        - kind: fixed
+          description: Handle multiple extraArgs in init container
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://kyverno.io/docs
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: v1.9.0
+    created: "2026-07-10T11:58:59.846919+08:00"
+    description: Kubernetes Native Policy Management
+    digest: 8c383033d74026ea92c5a6f250a02d293b867990cead20620751034fda5fe67a
+    home: https://kyverno.io/
+    icon: https://github.com/kyverno/kyverno/raw/main/img/logo.png
+    keywords:
+    - kubernetes
+    - nirmata
+    - policy agent
+    - validating webhook
+    - admissions controller
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Nirmata
+      url: https://kyverno.io/
+    name: kyverno
+    sources:
+    - https://github.com/kyverno/kyverno
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/kyverno-2.7.0.tgz
+    version: 2.7.0
+  prometheus-blackbox-exporter:
+  - apiVersion: v2
+    appVersion: 0.20.0
+    created: "2026-07-10T11:58:59.847363+08:00"
+    description: Prometheus Blackbox Exporter
+    digest: c02f28a5a6a3e8bfcaccb158fd1918c02b78b19c91a2a7eeae11c71467cfa267
+    home: https://github.com/prometheus/blackbox_exporter
+    keywords:
+    - prometheus
+    - blackbox
+    - monitoring
+    maintainers:
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: me@sota.sh
+      name: rsotnychenko
+    - email: monotek23@gmail.com
+      name: monotek
+    name: prometheus-blackbox-exporter
+    sources:
+    - https://github.com/prometheus/blackbox_exporter
+    - https://github.com/prometheus-community/helm-charts/tree/main/charts/prometheus-blackbox-exporter
+    type: application
+    urls:
+    - https://gogovan.github.io/ggx-public-helm-chart/prometheus-blackbox-exporter-5.8.1.tgz
+    version: 5.8.1
   debezium:
   - apiVersion: v2
     appVersion: v0-0-2
